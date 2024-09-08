@@ -14,7 +14,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
 
     it('preenche os campos obrigatórios e envia o formulário ', () => {
         const longText = 'Teste Teste Teste Teste Teste Teste Teste'
-        cy.get('#firstName').type('')
+        cy.get('#firstName').type('Uelton')
         cy.get('#lastName').type('Gomes')
         cy.get('#email').type('uelton.gomes@teste.com.br')
         cy.get('#open-text-area').type(longText,{delay: 0})
